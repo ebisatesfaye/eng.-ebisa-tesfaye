@@ -1,4 +1,5 @@
 import { RevealOnScroll } from "../RevealOnScroll";
+import photo from '../../../public/portifolio.png'
 
 export const Home = () => {
     return (
@@ -6,14 +7,27 @@ export const Home = () => {
 
         <RevealOnScroll>
             <div className="text-center z-10 px-4">
-                <h1 className="test-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400  bg-clip-text text-transparent leading-right">
-                    Hi, I'm Pedro Tech 
+
+                <div class="flex justify-center items-center mt-[50px] p-4">
+                    <div class="w-48 h-48 rounded-full overflow-hidden shadow-lg border-4 border-blue-500 focus:bg-blue-500/5">
+                        <img
+                        src={photo}
+                        alt="ebisa's photo"
+                        class="w-full h-full object-cover"
+                        />
+                    </div>
+                </div>
+
+
+                <h1 className="test-5xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400  bg-clip-text text-transparent leading-right">
+                    Hi, I'm Ebisa Tesfaye
                 </h1>
 
                 <p className="tex-gray-400 text-lg mb-8 max-w-lg mx-auto">
-                I’m a full-stack developer who loves crafting clean, scalable web
-                applications. My goal is to build solutions that offer both
-                exceptional performance and a delightful user experience.
+               Hello! I’m Ebisa, a software engineering student with five years of experience at university. 
+               My journey into the world of technology began with a simple curiosity about how things work. 
+               Over the years, this curiosity has blossomed into a deep-seated passion for software development, 
+               particularly in the realm of full-stack engineering.
             </p>
 
             <div className="flex justify-center space-x-4">
