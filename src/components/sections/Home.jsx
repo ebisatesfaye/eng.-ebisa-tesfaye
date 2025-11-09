@@ -1,5 +1,5 @@
 import { RevealOnScroll } from "../RevealOnScroll";
-import photo from '../../assets/portifolio.JPG'
+import photo from '../../assets/portifolio.jpg'
 
 export const Home = () => {
     return (
