@@ -1,5 +1,6 @@
 import { RevealOnScroll } from "../RevealOnScroll";
-import photo from '../../../public/portifolio.jpg'
+import photo from '../../assets/portifolio.jpg'
+
 
 export const Home = () => {
     return (
@@ -8,12 +9,12 @@ export const Home = () => {
         <RevealOnScroll>
             <div className="text-center z-10 px-4">
 
-                <div class="flex justify-center items-center mt-[50px] p-4">
-                    <div class="w-48 h-48 rounded-full overflow-hidden shadow-lg border-4 border-blue-500 focus:bg-blue-500/5">
+                <div className="flex justify-center items-center mt-[50px] p-4">
+                    <div className="w-48 h-48 rounded-full overflow-hidden shadow-lg border-4 border-blue-500 focus:bg-blue-500/5">
                         <img
                         src={photo}
                         alt="ebisa's photo"
-                        class="w-full h-full object-cover"
+                        className="w-full h-full object-cover"
                         />
                     </div>
                 </div>
