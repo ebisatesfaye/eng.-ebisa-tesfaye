@@ -2,29 +2,34 @@ import { RevealOnScroll } from "../RevealOnScroll";
 
 export const About = () => {
 
-   const frontendSkills = [
+  const frontendSkills = [
     "React",
-    "Vue",
-    "TypeScript",
+    "Vite",
+    "javascript",
     "TailwindCSS",
-    "Svelte",
+    "Typescript",
   ]
 
-  const backendSkills = ["Node.js", "Python", "AWS", "MongoDB", "GraphQL"];
+  const backendSkills = ["Node.js", "Python", "MySql", "MongoDB", "PostGreSql"];
 
-    return (
-      <section id="about"
-    className="min-h-screen flex items-center justify-center py-20">
+  return (
+    <section id="about"
+      className="min-h-screen flex items-center justify-center py-10">
       <RevealOnScroll>
-         <div className="max-w-3xl mx-auto px-4">
-             <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
+        <div className="max-w-3xl mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-2 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
             About Me
           </h2>
 
           <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
             <p className="text-gray-300 mb-6">
-              Passionate developer with expertise in building scalable web
-              applications and creating innovative solutions.
+              I am a passionate Software Engineering graduate with strong experience in full-stack web development. I specialize in building scalable and reliable applications using technologies such as React, Node.js, Express.js, Django, PostgreSQL, and MongoDB.</p>
+            <p>
+              I enjoy turning ideas into real, functional systems that solve practical problems. I focus on writing clean, maintainable code and building applications that are secure, efficient, and user-friendly. I am always eager to learn new technologies, improve my skills, and take on challenging projects.
+            </p>
+            <br />
+            <p>
+              I am particularly interested in backend engineering, and building real-world systems that create impact.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -59,51 +64,83 @@ export const About = () => {
                   ))}
                 </div>
               </div>
-            </div>,
+            </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+            <div className="grid grid-cols-1 md:grid-cols-1 gap-6 mt-8">
               <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
-                  <h3 className="text-xl font-bold mb-4">🏫 Education</h3>
-                  <ul className="list-disc list-inside text-gray-300 space-y-2">
-                    <li>
-                      <strong>B.S. in Software Engineering</strong> - Haramaya University (2015-2019)
-                    </li>
-                    <li>
-                      Relevant Coursework: Data Structures, Web Development, Cloud Computing...
-                    </li>
-                  </ul>
+                <h3 className="text-xl font-bold mb-4">🏫 Education</h3>
+                <ul className="list-disc list-inside text-gray-300 space-y-2">
+                  <li>
+                    <strong>Bachelor of Science in Software Engineering</strong> - Haramaya University  2022 – 2026 GC (2015-2019 EC)
+
+
+
+                  </li>
+                  <li>
+                    Relevant Coursework: Data Structures & Algorithms, Advanced Database Systems, Software Engineering, Web Development, Computer Networks, Cloud Computing...
+                  </li>
+                </ul>
               </div>
-                 <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
-                  <h3 className="text-xl font-bold mb-4"> 💼  Work Experience</h3>
+              <h3 className="text-xl text-center font-bold mb-4"> 💼  Work Experience</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+                <div className="p-0 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
                   <div className="space-y-4 text-gray-300">
-                      <div>
-                  <h4 className="font-semibold">
-                    Software Engineer at ABC Corp (2020 - Present)
-                  </h4>
-                  <p>
-                    Developed and maintained microservices for cloud-based
-                    applications.
-                  </p>
+                    <div>
+                      <h4 className="font-semibold">
+                        Personal Project | 2023
+                      </h4>
+                      <li>
+                        <strong>Full Stack Developer – Amazon Clone (E-commerce Platform)</strong>
+                      </li>
+                      <small>
+                        <li> Developed a full-stack e-commerce web application using React, Node.js, and Express</li>
+                        <li>Designed and implemented RESTful APIs for products, users, orders, and payments</li>
+                        <li>Built authentication and authorization system (JWT-based)
+                        </li>
+                        <li>Integrated database management using PostgreSQL / MongoDB
+                        </li>
+                        <li>Implemented shopping cart, product search, and order management features
+                        </li>
+                        <li>Deployed the application and managed version control using Git & GitHub
+                        </li>
+                      </small>
+                    </div>
+                  </div>
+                </div>
+                <div className="p-0 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
+                  {/* <h3 className="text-xl font-bold mb-4"> 💼  Work Experience</h3> */}
+                  <div className="space-y-4 text-gray-300">
+                    <div>
+                      <h4 className="font-semibold">
+                        Personal Project - UI/UX DESIGN (2024)
+                      </h4>
+                      <li>
+                        <strong>Frontend Developer – CodeFlow AI (SaaS Web Interface)</strong>
+                        <strong> Personal Project | 2024</strong>
+                      </li>
+
+                      <small>
+                        <li> Designed and implemented a production-style AI SaaS landing page</li>
+                        <li>Developed reusable React components (Hero, Features, Pricing, Testimonials, Navbar)</li>
+                        <li>Built a dynamic code preview interface to simulate AI-based code completion</li>
+                        <li>Applied modern UI/UX principles for layout, typography, and visual hierarchy</li>
+                        <li>Ensured responsive design and performance optimization</li>
+                        <li>Managed version control and project structure using Git</li>
+                      </small>
+
+                    </div>
+                  </div>
                 </div>
 
-                <div>
-                  <h4 className="font-semibold">
-                    
-                    Intern at DEF Startups (2019)
-                  </h4>
-                  <p>
-                    Assisted in building front-end components and integration
-                    REST APIs
-                  </p>
-                </div>
-                  </div>
               </div>
+              <b>. . .</b>
+
             </div>
           </div>
         </div>
       </RevealOnScroll>
-       
+
     </section>
-    );
-    
+  );
+
 }
