@@ -23,15 +23,16 @@ export const About = () => {
 
           <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
             <p className="text-gray-300 mb-6">
-              I am a passionate Software Engineering graduate with strong experience in full-stack web development. I specialize in building scalable and reliable applications using technologies such as React, Node.js, Express.js, Django, PostgreSQL, and MongoDB.</p>
-            <p>
-              I enjoy turning ideas into real, functional systems that solve practical problems. I focus on writing clean, maintainable code and building applications that are secure, efficient, and user-friendly. I am always eager to learn new technologies, improve my skills, and take on challenging projects.
+              <p>
+                I am a passionate Software Engineering graduate with strong experience in full-stack web development. I specialize in building scalable and reliable applications using technologies such as React, Node.js, Express.js, Django, PostgreSQL, and MongoDB.</p><br />
+              <p>
+                I enjoy turning ideas into real, functional systems that solve practical problems. I focus on writing clean, maintainable code and building applications that are secure, efficient, and user-friendly. I am always eager to learn new technologies, improve my skills, and take on challenging projects.
+              </p>
+              <br />
+              <p>
+                I am particularly interested in backend engineering, and building real-world systems that create impact.
+              </p>
             </p>
-            <br />
-            <p>
-              I am particularly interested in backend engineering, and building real-world systems that create impact.
-            </p>
-
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
                 <h3 className="text-xl font-bold mb-4"> Frontend</h3>
