@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { RevealOnScroll } from "../RevealOnScroll";
+import { FaGithub, FaLinkedin, FaTelegramPlane, FaEnvelope } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 export const Contact = () => {
 
@@ -26,6 +27,49 @@ export const Contact = () => {
                     <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
                         Get In Touch
                     </h2>
+                    {/* Social Links */}
+                    <div className="flex justify-center gap-6 mt-8 mb-5">
+
+                        {/* GitHub */}
+                        <a
+                            href="https://github.com/ebisatesfaye"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-400 hover:text-blue-400 transition text-2xl hover:scale-110 hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.8)]"
+                        >
+                            <FaGithub />
+                        </a>
+
+                        {/* LinkedIn */}
+                        <a
+                            href="https://linkedin.com/in/ebisa-tesfaye-0b8238319"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-400 hover:text-blue-500 transition text-2xl hover:scale-110"
+                        >
+                            <FaLinkedin />
+                        </a>
+
+                        {/* Telegram */}
+                        <a
+                            href="https://t.me/@ebisan1st"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-400 hover:text-cyan-400 transition text-2xl hover:scale-110"
+                        >
+                            <FaTelegramPlane />
+                        </a>
+
+                        {/* Email */}
+                        <a
+                            href="mailto:ebisatesfaye30@gmail.com"
+                            className="text-gray-400 hover:text-red-400 transition text-2xl hover:scale-110"
+
+                        >
+                            <FaEnvelope />
+                        </a>
+
+                    </div>
                     <form className="space-y-6" onSubmit={handleSubmit}>
                         <div className="relative">
                             <input
@@ -71,6 +115,9 @@ export const Contact = () => {
                             Send Message
                         </button>
                     </form>
+
+
+
                 </div>
             </RevealOnScroll>
         </section>
