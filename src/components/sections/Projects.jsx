@@ -14,6 +14,108 @@ export const Projects = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
+              <h3 className="text-xl font-bold mb-2"> Abe Garage - Backend</h3>
+              <p className="text-gray-400 mb-4">
+                <p>
+                  Abe Garage Backend is a RESTful API built with Node.js and Express.js.
+                  It manages employee registration and login functionality.
+                  The system integrates Firebase Firestore for secure cloud-based data storage.
+                </p><br />
+                <p>
+                  It handles JSON requests and enables CORS for frontend communication.
+                  The project demonstrates backend API design and database integration skills.
+                </p>
+
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {["Node.js", "Express.js", "Firestore", "Firebase Admin SDK"].map((tech, key) => (
+                  <span
+                    key={key}
+                    className="
+                      bg-blue-500/10 text-blue-500 py-1 px-3 
+                      rounded-full text-sm
+                      transition
+                      hover:bg-blue-500/20 hover:-translate-y-0.5
+                      hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)]
+                    "
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+
+              <div className="flex justify-between items-center">
+                {/* <a
+                  href="https://amazonebisan.netlify.app/"
+                  className="text-blue-400 hover:text-blue-300 transition-colors my-4"
+                >
+                  View Live Page →
+                </a> */}
+                <a
+                  href="https://github.com/ebisatesfaye/Abe-Garage-backend"
+                  className="text-blue-400 hover:text-blue-300 transition-colors my-4"
+                >
+                  Project Source Code →
+                </a>
+              </div>
+            </div>
+
+            <div
+              className="
+              glass p-6 rounded-xl border border-white/10 
+              hover:-translate-y-1 hover:border-blue-500/30
+              hover:shadow-[0_4px_20px_rgba(59,130,246,0.1)]
+              transition-all
+            "
+            >
+              <h3 className="text-xl font-bold mb-2">Amazon Clone Backend</h3>
+              <p className="text-gray-400 mb-4">
+                <p>
+                  Amazon Clone Backend is a backend API built with Node.js and Express.js.
+                  It integrates Stripe for secure online payment processing.
+                  The system creates payment intents dynamically based on cart total.
+                </p><br />
+                CORS is enabled to allow seamless frontend communication.
+                Environment variables are used to securely manage API keys.
+                The project demonstrates payment gateway integration and e-commerce backend development skills.
+
+                <p>
+                </p>
+              </p>
+
+              <div className="flex flex-wrap gap-2 mb-4">
+                {["NodeJs", "Express.Js", "Stripe API", "dotenv", "CORS Middleware"].map((tech, key) => (
+                  <span
+                    key={key}
+                    className="
+                      bg-blue-500/10 text-blue-500 py-1 px-3 
+                      rounded-full text-sm
+                      transition
+                      hover:bg-blue-500/20 hover:-translate-y-0.5
+                      hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)]
+                    "
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+              <div className="flex justify-between items-center ">
+                {/* <a
+                  href="#"
+                  className="text-blue-400 hover:text-blue-300 transition-colors my-4"
+                >
+                  View Live Page →
+                </a> */}
+                <a
+                  href="https://github.com/ebisatesfaye/amazon-backend-api"
+                  className="text-blue-400 hover:text-blue-300 transition-colors my-4"
+                >
+                  Project Source Code →
+                </a>
+              </div>
+            </div>
+
+            <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
               <h3 className="text-xl font-bold mb-2"> Amazon Clone E-Commerce</h3>
               <p className="text-gray-400 mb-4">
                 Developed a full-stack Amazon clone with Stripe payment integration and a Firestore backend. Implemented authentication, cart management, and secure order processing with real-time database support.
@@ -183,7 +285,7 @@ export const Projects = () => {
                   View Live Page →
                 </a>
                 <a
-                  href="https://github.com/ebisatesfaye/CodeAlpha_Project-Management/tree/main"
+                  href="https://github.com/ebisatesfaye/CodeAlpha_Project-Management/"
                   className="text-blue-400 hover:text-blue-300 transition-colors my-4"
                 >
                   Project Source Code →
