@@ -1,0 +1,20 @@
+import amazonClone1 from "../assets/amazon-clone1.png";
+import amazonClone2 from "../assets/amazon-clone2.png";
+import amazonClone3 from "../assets/amazon-clone3.png";
+import amazonClone4 from "../assets/amazon-clone4.png";
+import amazonClone5 from "../assets/amazon-clone5.png";
+import amazonClone6 from "../assets/amazon-clone6.png";
+import amazonClone7 from "../assets/amazon-clone7.png";
+import socialMediaPlatform_1 from "../assets/socialMediaPlatform_1.png";
+import socialMediaPlatform_2 from "../assets/socialMediaPlatform_2.png";
+import socialMediaPlatform_3 from "../assets/socialMediaPlatform_3.png";
+import modernAI_1 from "../assets/AI-1.png";
+import modernAI_2 from "../assets/AI-2.png";
+import modernAI_3 from "../assets/AI-3.png";
+import modernAI_4 from "../assets/AI-4.png";
+import modernAI_5 from "../assets/AI-5.png";
+import modernAI_6 from "../assets/AI-6.png";
+
+export const amazonImages = [amazonClone1, amazonClone2, amazonClone3, amazonClone4, amazonClone5, amazonClone6, amazonClone7];
+export const socialMediaPlatformImages = [socialMediaPlatform_1,socialMediaPlatform_2,socialMediaPlatform_3];
+export const modernAIImages = [modernAI_1, modernAI_2, modernAI_3, modernAI_4, modernAI_5, modernAI_6];
