@@ -5,7 +5,7 @@ import amazonClone4 from "../assets/amazon-clone4.png";
 import amazonClone5 from "../assets/amazon-clone5.png";
 import amazonClone6 from "../assets/amazon-clone6.png";
 import amazonClone7 from "../assets/amazon-clone7.png";
-import socialMediaPlatform_1 from "../assets/socialMediaPlatform_1.png";
+import socialMediaPlatform_1 from "../assets/socialMediaPlatForm_1.png";
 import socialMediaPlatform_2 from "../assets/socialMediaPlatForm_2.png";
 import socialMediaPlatform_3 from "../assets/socialMediaPlatForm_3.png";
 import modernAI_1 from "../assets/AI-1.png";
