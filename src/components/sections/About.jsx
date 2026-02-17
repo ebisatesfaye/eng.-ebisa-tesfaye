@@ -24,7 +24,10 @@ export const About = () => {
           <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
             <p className="text-gray-300 mb-6">
               <p>
-                I am a passionate Software Engineering graduate with strong experience in full-stack web development. I specialize in building scalable and reliable applications using technologies such as React, Node.js, Express.js, Django, PostgreSQL, and MongoDB.</p><br />
+
+               Currently, I am a passionate Software Engineering student and Backend Developer. Specializing in backend development.</p> 
+              <p>I am eager to contribute to real-world projects and further develop my expertise in backend systems.</p><br />
+
               <p>
                 I enjoy turning ideas into real, functional systems that solve practical problems. I focus on writing clean, maintainable code and building applications that are secure, efficient, and user-friendly. I am always eager to learn new technologies, improve my skills, and take on challenging projects.
               </p>
