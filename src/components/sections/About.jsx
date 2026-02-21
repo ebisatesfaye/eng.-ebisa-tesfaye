@@ -1,5 +1,5 @@
 import { RevealOnScroll } from "../RevealOnScroll";
-
+import cv from "../../assets/Ebisa_Tesfaye_CV.pdf";
 export const About = () => {
 
   const frontendSkills = [
@@ -25,7 +25,7 @@ export const About = () => {
             <p className="text-gray-300 mb-6">
               <p>
 
-               Currently, I am a passionate Software Engineering student and Backend Developer. Specializing in backend development.</p> 
+                Currently, I am a passionate Software Engineering student and Backend Developer. Specializing in backend development.</p>
               <p>I am eager to contribute to real-world projects and further develop my expertise in backend systems.</p><br />
 
               <p>
@@ -137,7 +137,10 @@ export const About = () => {
                 </div>
 
               </div>
-              <b>. . .</b>
+              <b>. . . <a href={cv} download="Ebisa_Tesfaye_CV.pdf" rel="noopener noreferrer"  className="text-blue-400 hover:text-blue-300 transition-colors">
+                Download CV
+              </a></b>
+
 
             </div>
           </div>

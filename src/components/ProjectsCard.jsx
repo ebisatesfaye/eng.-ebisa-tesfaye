@@ -52,20 +52,6 @@ function ProjectsCard({ title, description, images = [], techStack = [], github,
         window.addEventListener("keydown", handleKeyDown);
         return () => window.removeEventListener("keydown", handleKeyDown);
     }, [isOpen]);
-
-    // Prevent background scroll when modal is open
-    useEffect(() => {
-        if (isOpen) {
-            document.body.style.overflow = "hidden";
-        } else {
-            document.body.style.overflow = "auto";
-        }
-
-        return () => {
-            document.body.style.overflow = "auto";
-        };
-    }, [isOpen]);
-
     return (
         <>
             <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
@@ -163,7 +149,7 @@ function ProjectsCard({ title, description, images = [], techStack = [], github,
 
             {isOpen && (
                 <div
-                    className="fixed inset-0 bg-black/80 flex items-center justify-center z-50"
+                    className="fixed inset-0 bg-black/80 flex items-center justify-center z-[9999]"
                     onClick={() => setIsOpen(false)}
                 >
                     <div
@@ -173,7 +159,6 @@ function ProjectsCard({ title, description, images = [], techStack = [], github,
                         }}
                     >
 
-                        {/* 🔹 Previous Button */}
                         <button
                             onClick={prevImage}
                             className="absolute left-4 bg-black/60 text-white px-3 py-2 rounded hover:bg-black/80 transition"
@@ -181,14 +166,13 @@ function ProjectsCard({ title, description, images = [], techStack = [], github,
                             ◀
                         </button>
 
-                        {/* 🔹 Full Image */}
                         <img
                             src={images[currentImage]}
+                            onClick={() => setIsOpen(false)}
                             alt="Full View"
                             className="w-full max-h-[95vh] object-contain rounded-lg "
                         />
 
-                        {/* 🔹 Next Button */}
                         <button
                             onClick={nextImage}
                             className="absolute right-4 bg-black/60 text-white px-3 py-2 rounded hover:bg-black/80 transition"
@@ -196,7 +180,7 @@ function ProjectsCard({ title, description, images = [], techStack = [], github,
                             ▶
                         </button>
 
-                        {/* 🔹 Close Button */}
+                    
                         <button
                             onClick={() => setIsOpen(false)}
                             className="absolute top-[-20px] right-[-20px] text-white text-2xl"
@@ -207,6 +191,7 @@ function ProjectsCard({ title, description, images = [], techStack = [], github,
                     </div>
                 </div>
             )}
+          
         </>
 
     );
