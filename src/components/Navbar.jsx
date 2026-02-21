@@ -1,5 +1,6 @@
 import { useEffect } from "react"
 import profile from "../assets/profile2.png"
+import cv from "../assets/Ebisa_Tesfaye_CV.pdf";
 
 export const Navbar = ({ menuOpen, setMenuOpen }) => {
 
@@ -34,6 +35,14 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
 
                         <a href="#contact" className="text-gray-300 hove:text-white transition-colors">
                             Contact  </a>
+                        {/* CV Download Button */}
+                        <a
+                            href={cv}
+                            download="Ebisa_Tesfaye_CV.pdf"
+                            className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-all duration-300"
+                        >
+                            Download CV
+                        </a>
                     </div>
                 </div>
             </div>
